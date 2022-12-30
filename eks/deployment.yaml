@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: votermodify-api-deployment
+  labels:
+    app: voter-modify-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: voter-modify-api
+  template:
+    metadata:
+      labels:
+        app: voter-modify-api
+    spec:
+      containers:
+      - name: voter-modify-api
+        image: 227312628498.dkr.ecr.us-east-2.amazonaws.com/cc-cw_voterregistrationmodify:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
