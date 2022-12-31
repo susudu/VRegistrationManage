@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to California voter registration manage and monitor application." });
 });
-require("./app/routes/voterStats.routes.js")(app);
+require("./app/routes/voterModify.routes.js")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

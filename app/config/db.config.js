@@ -1,6 +1,6 @@
 module.exports = {
-  HOST: "iit-20211042-cc-rds.c01sgx0qnx2x.us-east-1.rds.amazonaws.com",
+  HOST: "cc-20211042-rds.cza11zbqtlsj.us-east-2.rds.amazonaws.com",
   USER: "admin",
-  PASSWORD: "Bulldog$123",
+  PASSWORD: "Tommya$123",
   DB: "voteUser"
 };
